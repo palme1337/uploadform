@@ -1,0 +1,22 @@
+{
+  "pastUploads": [
+    {
+      "createDate": 1440266274768,
+      "status": "PENDING",
+      "id": 1,
+      "s3Key": "123123"
+    },
+    {
+      "createDate": 1440266274768,
+      "status": "COMPLETE",
+      "id": 2,
+      "s3Key": "123123"
+    },
+    {
+      "createDate": 1440266274768,
+      "status": "FAILED",
+      "id": 3,
+      "s3Key": "123123"
+    }
+  ]
+}

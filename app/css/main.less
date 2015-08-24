@@ -1,0 +1,19 @@
+@import "~bootstrap-less/bootstrap/bootstrap.less";
+
+@base: #f938ab;
+
+.dropzone-shadow(@style, @c) when (iscolor(@c)) {
+  dropzone-shadow:         @style @c;
+}
+.dropzone-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .dropzone-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+.dropzone {
+  color: saturate(@base, 5%);
+  border-color: lighten(@base, 30%);
+  align-content: center;
+  span {
+    .dropzone-shadow(0 0 5px, 30%);
+    vertical-align: middle;
+  }
+}

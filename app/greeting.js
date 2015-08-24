@@ -1,4 +1,5 @@
 import React from 'react';
+import * as asdf from 'css/main.less';
 
 export default React.createClass({
     render: function() {

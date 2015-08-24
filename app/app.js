@@ -1,15 +1,10 @@
 import React from 'react';
-import BulkUpload from './bulk-upload/BulkUpload';
-
-var PAST_UPLOADS = [
-    {createDate: new Date(), status: 'PENDING'},
-    {createDate: new Date(), status: 'COMPLETE'},
-    {createDate: new Date(), status: 'FAILED'}
-];
+import BulkUpload from './js/bulk-upload/BulkUpload';
+require('./css/main.less');
 
 React.render(
     (
-        <BulkUpload pastUploads={PAST_UPLOADS}/>
+        <BulkUpload />
     ),
     document.body
 );
